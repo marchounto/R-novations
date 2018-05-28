@@ -1,0 +1,114 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url('/assets/fonts/Pacifico.ttf');
+}
+@keyframes stretch {
+    0% {
+      transform: scale(0);
+    }
+    10% {
+        transform: scale(.1);
+    }
+    20% {
+        transform: scale(.2);
+    }
+    30% {
+        transform: scale(.3);
+    }
+    40% {
+        transform: scale(.4);
+    }
+    
+    50% {
+        transform: scale(.5);
+    }
+    60% {
+        transform: scale(.6);
+    }
+    70% {
+        transform: scale(.7);
+    }
+    80% {
+        transform: scale(.8);
+    }
+    90% {
+        transform: scale(.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+  }
+body{
+    background-image:url('/assets/reno.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height:900px;
+    width: 100%;
+    font-family: myFirstFont;
+    color: white;
+    position: absolute;
+    top:0px;
+    left:0px;
+    margin-left:-1px;
+    margin-top: -1px;
+}
+.header {
+    height: 50px;
+    width: 100%;
+    background-color: orangered;
+    text-align: center;
+    vertical-align:text-bottom;
+    font-family: myFirstFont;
+    color: white;
+    margin-top: -20px;
+}
+
+.buttonAdmin{
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 400px;
+    margin-left: 400px;
+    cursor: pointer;
+}
+
+.buttonClient{
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 200px;
+    cursor: pointer;
+}
+.admin{
+    position: relative;
+    top: -100px;
+    left:-450px;
+    border-radius: 50%;
+}
+.client{
+    position: relative;
+    top: -100px;
+    left:-300px;
+    border-radius: 50%;
+}
+.intro{
+    animation-name: stretch;
+    animation-duration: 1.5s; 
+    animation-timing-function: ease-out; 
+    animation-delay: 0;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    text-align: center;
+}
